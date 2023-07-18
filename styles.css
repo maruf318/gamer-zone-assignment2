@@ -11,6 +11,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .menus-container ul {
   /* border: 1px solid blue; */
@@ -52,7 +54,127 @@
   background: rgba(11, 2, 35, 0.1);
   padding: 15px 25px;
 }
+/* Banner section CSS */
+.banner-container {
+  max-width: 1500px;
+  /* border: 1px solid red; */
+  height: 500px;
 
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner-contents {
+  width: 50%;
+  /* border: 1px solid blue; */
+  background-image: url("./images//Group\ 14.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+  fill: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
+  height: 500px;
+}
+.banner-contents ul li {
+  list-style: none;
+}
+.banner-img {
+  width: 50%;
+
+  /* border: 1px solid green; */
+}
+.banner-img img {
+  width: 72%;
+}
+.banner-heading {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.goat {
+  font-size: 6rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-description {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.btn-pink {
+  border-radius: 20px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  color: white;
+  padding: 15px 25px;
+  border: none;
+}
+.btn-blue {
+  border-radius: 20px;
+  background-color: #4ec5f7;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+}
+.button {
+  margin-top: 20px;
+}
+.bi {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Card section css */
+.card-heading {
+  color: #0b0223;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0;
+  width: 100%;
+}
+.card-heading-pink {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-description {
+  color: #534c64;
+  text-align: center;
+
+  font-size: 1rem;
+
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.card-container {
+  max-width: 1200px;
+  /* border: 2px solid black; */
+  min-height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+}
+.card {
+  /* border: 2px solid red; */
+  width: 22%;
+}
+.card img {
+  width: 100%;
+  padding-bottom: 15px;
+}
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
@@ -65,5 +187,70 @@
   }
   .nav-title-container {
     padding-top: 20px;
+  }
+  /* Banner Section */
+  .banner-container {
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+  .banner-img {
+    width: 100%;
+    margin-top: 20px;
+
+    /* border: 2px solid black; */
+
+    /* border: 1px solid green; */
+  }
+  .banner-img img {
+    width: 80%;
+    padding-left: 40px;
+  }
+  .banner-contents {
+    width: 100%;
+    /* text-align: center; */
+    border: 1px solid black;
+  }
+  /* Card section */
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .card-heading {
+    font-size: 1.75rem;
+  }
+  .card-description {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 996px) {
+  /* Banner Section */
+  .banner-container {
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+  .banner-img {
+    width: 100%;
+    margin-top: 20px;
+
+    /* border: 2px solid black; */
+
+    /* border: 1px solid green; */
+  }
+  .banner-img img {
+    width: 80%;
+    padding-left: 40px;
+  }
+  .banner-contents {
+    width: 100%;
+    /* text-align: center; */
+    border: 1px solid black;
   }
 }
