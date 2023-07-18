@@ -6,6 +6,7 @@
 
 .nav-container {
   max-width: 1500px;
+  margin: 0 auto;
   min-height: 100px;
   /* border: 1px solid red; */
   display: flex;
@@ -57,6 +58,7 @@
 /* Banner section CSS */
 .banner-container {
   max-width: 1500px;
+  margin: 0 auto;
   /* border: 1px solid red; */
   height: 500px;
 
@@ -175,6 +177,53 @@
   width: 100%;
   padding-bottom: 15px;
 }
+
+/* Play games section start */
+.play-games-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+.image-container {
+  width: 60%;
+  min-height: 100px;
+  border: 2px solid green;
+  position: relative;
+  margin-left: 20px;
+}
+.play-games-contents {
+  width: 40%;
+  min-height: 100px;
+  border: 2px solid pink;
+}
+.big-image {
+  width: 80%;
+  margin: 0 auto;
+}
+.small-image {
+  width: 40%;
+  position: absolute;
+  bottom: -100px;
+  right: 50px;
+}
+.play-games-heading {
+  font-size: 3rem;
+
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.play-games-description {
+  color: #534c64;
+
+  font-size: 1rem;
+
+  font-weight: 400;
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
