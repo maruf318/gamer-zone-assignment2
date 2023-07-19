@@ -269,6 +269,69 @@
   font-weight: 600;
   padding-left: 20px;
 }
+footer {
+  background-color: #0b0223;
+  color: white;
+}
+.footer-title-container {
+  padding-top: 80px;
+}
+.footer-gamer {
+  color: white;
+  text-align: center;
+
+  font-size: 2.5rem;
+
+  font-weight: 700;
+}
+.footer-contents {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.footer-text {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 20px;
+}
+.footer-privacy-contents {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.footer-terms-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 20px;
+}
+.footer-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
@@ -358,6 +421,7 @@
 
     align-content: center;
     justify-content: center;
+
     /* gap: 17px; */
     /* padding: 100px 0; */
   }
@@ -383,6 +447,16 @@
   }
   .games-category-container .game-button img {
     width: 20%;
+  }
+  /* Footer CSS */
+  .footer-contents {
+    flex-direction: column;
+  }
+  .footer-privacy-contents {
+    flex-direction: column;
+  }
+  footer {
+    margin-top: 20px;
   }
 }
 
