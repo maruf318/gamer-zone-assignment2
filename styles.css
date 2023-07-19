@@ -8,7 +8,6 @@
   max-width: 1500px;
   margin: 0 auto;
   min-height: 100px;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,6 +60,9 @@
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
   padding: 15px 25px;
+}
+.fa-brands {
+  padding-left: 10px;
 }
 /* Banner section CSS */
 .banner-container {
@@ -128,6 +130,7 @@
   color: white;
   padding: 15px 25px;
   border: none;
+  cursor: pointer;
 }
 .btn-blue {
   border-radius: 20px;
@@ -135,6 +138,7 @@
   color: white;
   padding: 15px 25px;
   border: none;
+  cursor: pointer;
 }
 .button {
   margin-top: 20px;
@@ -177,27 +181,24 @@
   margin: 20px auto;
 }
 .card {
-  /* border: 2px solid red; */
   width: 22%;
-  /* testing here start*/
   position: relative;
   display: inline-block;
-  /* testing end here */
 }
-
 .over {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   opacity: 0;
   transition: opacity 0.4 ease;
 }
+
 .card:hover .over {
   opacity: 1;
   color: #ff42a5;
-
-  /* background-color: lightgoldenrodyellow; */
+  cursor: pointer;
 }
 .fa-circle-play {
   font-size: 40px;
@@ -218,6 +219,8 @@
 .card-images:hover {
   border: 5px solid #ff42a5;
   border-radius: 20px;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* Play games section start */
@@ -228,23 +231,19 @@
   align-items: center;
   max-width: 1500px;
   margin: 50px auto;
-  /* border: 2px solid black; */
 }
 .image-container {
   width: 60%;
   min-height: 100px;
-  /* border: 2px solid green; */
   position: relative;
   margin-left: 20px;
 }
 .play-games-contents {
   width: 40%;
   min-height: 100px;
-  /* border: 2px solid pink; */
 }
 .big-image {
   width: 70%;
-  /* position: relative; */
   padding-left: 150px;
   margin: 0 auto;
 }
@@ -269,7 +268,6 @@
 }
 /* Game category button start here */
 .games-category-container {
-  /* border: 2px solid black; */
   max-width: 1500px;
   margin: 0 auto;
   min-height: 100px;
@@ -293,7 +291,7 @@
   /* width: 80%; */
   flex-basis: 250px;
   min-height: 30px;
-  /* border: 2px solid red; */
+
   border: none;
   align-items: center;
   display: flex;
@@ -309,6 +307,7 @@
 .game-button:hover {
   border: 3px solid #ff42a5;
   color: #ff42a5;
+  cursor: pointer;
 }
 
 .game-names {
@@ -343,6 +342,7 @@ footer {
   font-size: 1rem;
   font-weight: 600;
   padding: 20px;
+  cursor: pointer;
 }
 .footer-privacy-contents {
   display: flex;
@@ -357,6 +357,7 @@ footer {
   font-size: 1rem;
   font-weight: 500;
   padding: 20px;
+  cursor: pointer;
 }
 .footer-title-container {
   display: flex;
@@ -368,6 +369,8 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  cursor: pointer;
+  margin: 33px auto;
 }
 .foot {
   display: flex;
@@ -403,10 +406,6 @@ footer {
   .banner-img {
     width: 100%;
     padding-top: 20px;
-
-    /* border: 2px solid black; */
-
-    /* border: 1px solid green; */
   }
   .banner-img img {
     width: 80%;
@@ -414,15 +413,13 @@ footer {
   }
   .banner-contents {
     width: 100%;
-    /* text-align: center; */
-    /* border: 1px solid black; */
   }
   /* Card section */
   .card-container {
     flex-direction: column;
   }
   .card {
-    width: 80%;
+    width: 75%;
     margin: 20px auto;
     text-align: center;
   }
@@ -439,23 +436,18 @@ footer {
   .image-container {
     width: 90%;
     height: 300px;
-    /* min-height: 100px; */
-    /* border: 2px solid green; */
+
     position: relative;
-    /* margin: 0 auto; */
   }
   .play-games-contents {
     width: 90%;
     text-align: center;
-    /* min-height: 400px; */
-    /* border: 2px solid pink; */
   }
   .big-image {
     width: 70%;
     height: 100%;
     position: relative;
     padding-left: 30px;
-    /* margin: 0 auto; */
   }
   .small-image {
     width: 35%;
@@ -465,19 +457,12 @@ footer {
   }
   /* Game category button */
   .games-category-container {
-    /* border: 2px solid black; */
-
     align-content: center;
     justify-content: center;
-
-    /* gap: 17px; */
-    /* padding: 100px 0; */
   }
   .play-games-contents {
     width: 80%;
     text-align: center;
-    /* min-height: 400px; */
-    /* border: 2px solid pink; */
   }
   .games-category-container {
     width: 80%;
@@ -519,10 +504,6 @@ footer {
   .banner-img {
     width: 100%;
     margin-top: 20px;
-
-    /* border: 2px solid black; */
-
-    /* border: 1px solid green; */
   }
   .banner-img img {
     width: 80%;
@@ -530,8 +511,6 @@ footer {
   }
   .banner-contents {
     width: 100%;
-    /* text-align: center; */
-    /* border: 1px solid black; */
   }
   /* Play games section */
   .play-games-container {
@@ -540,24 +519,19 @@ footer {
   .image-container {
     width: 90%;
     height: 400px;
-    /* min-height: 100px; */
-    /* border: 2px solid green; */
+
     position: relative;
-    /* margin: 0 auto; */
   }
   .play-games-contents {
     width: 90%;
     text-align: center;
     margin-top: 50px;
-    /* min-height: 400px; */
-    /* border: 2px solid pink; */
   }
   .big-image {
     width: 70%;
     height: 100%;
     position: relative;
     padding-left: 30px;
-    /* margin: 0 auto; */
   }
   .small-image {
     width: 35%;
